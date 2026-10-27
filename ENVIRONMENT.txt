@@ -1,0 +1,16 @@
+Runtime: CPython 3.12 (pinned in .python-version) with the exact pins in requirements.txt:
+  numpy==2.3.5, scipy==1.17.0, matplotlib==3.10.8 (figures only).
+Tested host: macOS 27 (Darwin, arm64), CPython 3.12 via `uv run --no-project --python 3.12 --with-requirements requirements.txt`.
+Exact arithmetic: code/verify_attractive_embedding.py verifies a complete integer eigenbasis of 2J with numpy int64
+  matrix products and exact integer determinants (fraction-free elimination); no floating-point eigensolver.
+Floating point: code/kuramoto_checks.py uses numpy/scipy eigensolvers with stated tolerances (1e-12 to 1e-8); its
+  last digits depend on the platform's linear-algebra library, so kuramoto_checks.json is reported, not compared,
+  by reproduce.py (it was byte-identical on the release host).
+Assertions: the scripts in code/ use assert statements, which python -O removes. Run them without -O.
+  negative_controls.py uses explicit checks and runs the verifier as a child process without -O.
+Bytecode: run with -B (or PYTHONDONTWRITEBYTECODE=1) so nothing is written beside the scripts.
+Runtime on the tested host: reproduce.py about 30 s (with --pdf); negative_controls.py under 1 minute.
+PDF: pdflatex (TeX Live 2026), run three times; not part of the byte-for-byte replay.
+Continuous integration: GitHub Actions, ubuntu-latest, CPython 3.12 (.github/workflows/replay.yml): SHA256SUMS,
+  pinned install, reproduce.py (exact certificate and edge list compared byte for byte), negative controls,
+  and a clean working tree.

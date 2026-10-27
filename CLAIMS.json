@@ -1,0 +1,94 @@
+{
+  "schemaVersion": "1.0",
+  "release": "signed-kuramoto-positive-networks",
+  "version": "1.0.0-candidate",
+  "doi": "10.5281/zenodo.23690073",
+  "creator": "Anonymous",
+  "status": "unrefereed-candidate",
+  "manuscript": "signed_kuramoto_networks_inside_positive_ones.pdf",
+  "claims": [
+    {
+      "id": "C1",
+      "kind": "theorem",
+      "location": "Theorem 1; Lemma 4; Corollary 5",
+      "statement": "For every signed simple graph H (signs +/-1, n vertices, maximum degree Delta) and integer r > 4 Delta, the positive simple unweighted graph G(H,r) with 6nr vertices contains an embedded invariant torus F(T^n) carrying the signed dynamics exactly; F maps equilibrium germs onto equilibrium germs, identifies Lyapunov-stable sets, and the Jacobian spectrum at F(phi*) is that at phi* plus eigenvalues <= -(r/2 - 2 Delta).",
+      "status": "proved",
+      "evidence": [
+        "code/kuramoto_checks.py (10 random signed graphs, 296 equilibria)"
+      ],
+      "notNew": "The invariance step is of a known coupled-cell type; novelty is claimed for the uniform normal bound and its quantitative consequences only, within a bounded search."
+    },
+    {
+      "id": "C2",
+      "kind": "theorem",
+      "location": "Theorem 2; Section 4.2",
+      "statement": "G_{6,9} (324 vertices, 3726 edges, 23-regular, connected) has an equilibrium theta* with equilibrium germ R x C(S^1 x S^1), all nearby equilibria Lyapunov stable; neither the equilibrium set nor the stable set is a countable union of closed embedded topological manifolds without boundary or of immersed compact manifolds without boundary.",
+      "status": "proved",
+      "evidence": [
+        "checks/exact_kuramoto_certificate.txt (319 negative, 5 zero eigenvalues)"
+      ]
+    },
+    {
+      "id": "C3",
+      "kind": "theorem",
+      "location": "Theorem 3; Section 5",
+      "statement": "On K_n the equilibrium set is a finite union of closed embedded smooth manifolds iff a countable union of closed embedded topological manifolds iff a countable union of immersed compact manifolds iff n is odd or n <= 4.",
+      "status": "proved",
+      "notNew": "Short corollary of classical polygon geometry and Burns et al. Theorem 16.1 plus the cover lemmas."
+    },
+    {
+      "id": "C4",
+      "kind": "status-of-conjecture",
+      "location": "Section 1.2, Table 1",
+      "statement": "Sclosa's Conjecture 1.3 is false in its published (closed-manifold) wording, its countable version, its immersed-compact version and its relatively-closed version; it is true in its literal arXiv v1 wording (manifolds not necessarily closed) and for manifolds with boundary or corners.",
+      "status": "proved"
+    },
+    {
+      "id": "C5",
+      "kind": "corollary",
+      "location": "Corollary 13",
+      "statement": "For every m = 2k+4 >= 6 and r > 2(m-2), G_{m,r} has a stable equilibrium continuum with germ R x C(S^k x S^k), with no countable closed or immersed compact cover of the equilibrium set or stable set.",
+      "status": "proved",
+      "evidence": [
+        "G_{8,13} cone point: no positive eigenvalue, nullity 7 (proof audit)"
+      ]
+    },
+    {
+      "id": "C6",
+      "kind": "corollary",
+      "location": "Corollary 14",
+      "statement": "G_{4,5} (120 vertices, 13-regular) has an open and closed set of stable equilibria that is the image of three embedded 2-tori meeting cleanly along aligned circles; nullity 3 at aligned balanced points.",
+      "status": "proved"
+    },
+    {
+      "id": "C7",
+      "kind": "corollary",
+      "location": "Corollary 15",
+      "statement": "For odd m >= 3 and r > 2(m-2), F(B_m) is a compact smooth (m-2)-manifold of stable equilibria of G_{m,r}, a union of components, with nullity exactly m-2.",
+      "status": "proved",
+      "notNew": "Sclosa (2023) already has stable equilibrium manifolds of every dimension."
+    },
+    {
+      "id": "C8",
+      "kind": "remark",
+      "location": "Remark 12",
+      "statement": "At the cone point of G_{6,r}: unstable for r <= 7 (eigenvalue 4 - r/2 > 0), degenerate and undetermined for r = 8, stable for r >= 9.",
+      "status": "proved; r = 8 open"
+    },
+    {
+      "id": "C9",
+      "kind": "remark",
+      "location": "Remark 16",
+      "statement": "A 36-vertex weighted version (ring weight K = 9) has the same stable cone germ.",
+      "status": "proved; spectrum computed"
+    }
+  ],
+  "doNotRead": [
+    "the literal arXiv v1 wording of Conjecture 1.3 as refuted (it is true)",
+    "any result as robust to generic perturbation of weights or frequencies",
+    "any statement about heterogeneous networks such as power grids",
+    "r = 9 as a sharp threshold",
+    "the local cone homeomorphism (Lemma 7) as a new result",
+    "internal AI-assisted review as peer review"
+  ]
+}

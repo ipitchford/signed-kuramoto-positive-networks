@@ -1,0 +1,194 @@
+{
+ "schemaVersion": "1.0",
+ "provenance": "Compiled 27 October 2026 for release 1.0.0-candidate from the internal domain review's prior-art section (reviews of 27 October 2026), the manuscript's bounded search (Section 7, current to 27 October 2026), the verification re-review's citation audit, the second correctness review's novelty audit, and a retrospective intake check (Semantic Scholar and Crossref citing-work counts for Sclosa 2023) run on 27 October 2026 at release preparation. The Evidence Press corpus was checked by the batch triage: no prior Kuramoto or synchronisation release. It documents the scrutiny performed, not historical priority.",
+ "contributionMap": [
+  {
+   "claim": "Exact realisation of +/-1 signed Kuramoto networks by positive unit-coupling networks with preservation of complete equilibrium germs, Lyapunov stability, Morse index and nullity (Theorem 1, Lemma 4, Corollary 5).",
+   "unit": "statement",
+   "paperLocation": "Theorem 1; Sections 2.1-2.4; Section 7.4",
+   "searches": [
+    {
+     "date": "2026-10-27",
+     "query": "signed network Kuramoto positive realisation; graph lift equilibria stability; weighted to unweighted synchronizing graph",
+     "corpus": "Semantic Scholar, arXiv and publisher abstracts (domain review, Section 3)"
+    },
+    {
+     "date": "2026-10-27",
+     "query": "coupled-cell synchrony subspaces, quotient networks, balanced colourings (Stewart-Golubitsky-Pivato; Golubitsky-Stewart-Torok; Golubitsky-Stewart)",
+     "corpus": "main definitions and theorems of the three papers (manuscript Section 7.4)"
+    },
+    {
+     "date": "2026-10-27",
+     "query": "phase-shift synchrony; graph coverings and voltage graphs; signed graph lifts; anti-phase quotient constructions",
+     "corpus": "second automated correctness review novelty audit (neighbouring literatures named, not exhaustively searched)"
+    }
+   ],
+   "closestPriorWork": "Canale (arXiv:2209.06362v3): weighted-to-unweighted lifts preserving linearly stable equilibria; Schaub et al. (2016): signed equitable partitions; coupled-cell invariance results (SGP 2003, GST 2005, GS 2006).",
+   "verdict": "partially-known-cited"
+  },
+  {
+   "claim": "Uniform normal Hessian bound and the normal-coercivity energy inequality at degenerate equilibria (Lemma 4, eq. (8)).",
+   "unit": "method",
+   "paperLocation": "Lemma 4; Section 2.2-2.3",
+   "searches": [
+    {
+     "date": "2026-10-27",
+     "query": "normal hyperbolicity invariant manifold gradient flow degenerate minimum Lyapunov stable; Absil Kurdyka stable equilibria gradient systems",
+     "corpus": "manuscript literature search and review-role checks"
+    }
+   ],
+   "closestPriorWork": "Absil-Kurdyka (2006) Theorem 3 (stability iff local minimum for analytic gradient flows), used as a cited tool; standard Taylor/Lipschitz estimates.",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Stable non-manifold equilibrium continuum R x C(S^1 x S^1) in a positive unweighted graph (Theorem 2) and stable cones of every even order (Corollary 13).",
+   "unit": "object",
+   "paperLocation": "Theorem 2; Corollary 13; Section 4",
+   "searches": [
+    {
+     "date": "2026-10-27",
+     "query": "works citing Sclosa 2023 (doi:10.1137/23M155400X)",
+     "corpus": "Semantic Scholar graph: 8 citing works, none on non-manifold stable continua or closed-manifold covers; Crossref is-referenced-by-count 7"
+    },
+    {
+     "date": "2026-10-27",
+     "query": "stable equilibria Kuramoto non-manifold continuum; balanced configuration polygon linkage stability",
+     "corpus": "domain review search (Semantic Scholar, arXiv)"
+    }
+   ],
+   "closestPriorWork": "Sclosa (2023): stable equilibrium manifolds of every dimension (smooth, not singular).",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Closed-cover and immersed-cover obstructions (Lemmas 8-9) and the complete-graph classification (Theorem 3).",
+   "unit": "proof",
+   "paperLocation": "Lemmas 8-9; Corollary 10; Theorem 3; Section 5",
+   "searches": [
+    {
+     "date": "2026-10-27",
+     "query": "Burns Malajovich Pugh Rajapakse Smale Kuramoto flow singularities; polygon space singularity equal-sum lengths; Kamiyama; Kapovich-Millson",
+     "corpus": "arXiv:2605.22983v3 Section 16; Kamiyama 1996; Kapovich-Millson 1996 (domain review and manuscript)"
+    }
+   ],
+   "closestPriorWork": "Burns et al. arXiv:2605.22983v3 Theorem 16.1 (tangent link S^{m-2} x S^{m-2}); classical polygon-space cone (Kamiyama; Kapovich-Millson); Harrington-Schenck-Stillman decomposition.",
+   "verdict": "partially-known-cited"
+  },
+  {
+   "claim": "Local cone homeomorphism in Kuramoto angle coordinates (Lemma 7).",
+   "unit": "statement",
+   "paperLocation": "Lemma 7; Section 3.2",
+   "searches": [
+    {
+     "date": "2026-10-27",
+     "query": "local normal form polygon space equal-sum singularity; Kapovich-Millson local model",
+     "corpus": "second automated correctness review novelty audit"
+    }
+   ],
+   "closestPriorWork": "Kamiyama (1996); Kapovich-Millson (1996); Burns et al. Theorem 16.1. An equivalent local normal form may exist.",
+   "verdict": "known-cited"
+  }
+ ],
+ "sourcesReadInFull": [
+  {
+   "citation": "Sclosa, Kuramoto networks with infinitely many stable equilibria, arXiv:2207.08182v1 and SIAM J. Appl. Dyn. Syst. 22(4) (2023) 3267-3283",
+   "usedFor": "Conjecture 1.3 wording (both versions), B_4 description, prior stable manifolds",
+   "readWhat": "Full text of arXiv v1 and the version of record (extracted text), Sections 1 and 3, p. 3269",
+   "date": "2026-10-27",
+   "evidenceLocator": "SOURCES.md; manuscript Section 1.2"
+  },
+  {
+   "citation": "Burns, Malajovich, Pugh, Rajapakse, Smale, Global analysis of the Kuramoto flow, arXiv:2605.22983v3",
+   "usedFor": "Tangent link at the balanced point of K_{2m}",
+   "readWhat": "Section 16 and Theorem 16.1",
+   "date": "2026-10-27",
+   "evidenceLocator": "https://arxiv.org/abs/2605.22983v3, Section 16"
+  },
+  {
+   "citation": "Absil and Kurdyka, On the stable equilibrium points of gradient systems, Systems & Control Letters 55 (2006)",
+   "usedFor": "Stability iff local minimum",
+   "readWhat": "Theorem 3 statement and hypotheses",
+   "date": "2026-10-27",
+   "evidenceLocator": "doi:10.1016/j.sysconle.2006.01.002, Theorem 3"
+  }
+ ],
+ "limitationTriage": [
+  {
+   "limitation": "Stability at r = 8 (degenerate normal Hessian at the cone point) is undetermined.",
+   "closingQuestion": "Does a higher-order energy expansion along the two extra zero normal modes settle local minimality?",
+   "triedOrSearched": "Exact spectrum computed (7 zeros); Lemma 4 does not apply; no known theorem covers it.",
+   "estimatedCost": "days; new analysis",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Needs a new fourth-order analysis; stated as open in Remark 12."
+  },
+  {
+   "limitation": "No minimal vertex count is claimed.",
+   "closingQuestion": "Is there a smaller positive unweighted graph with a stable non-manifold continuum?",
+   "triedOrSearched": "36-vertex weighted version given (Remark 16); exhaustive search not attempted.",
+   "estimatedCost": "weeks; open combinatorial search",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Open-ended search, out of scope."
+  },
+  {
+   "limitation": "Whether a smaller non-complete base graph such as K_{3,3} already violates the closed reading is undetermined.",
+   "closingQuestion": "Does the equilibrium set of K_{3,3} admit a closed cover?",
+   "triedOrSearched": "Sclosa's analysis of K_{3,3} read; not resolved.",
+   "estimatedCost": "days",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Requires new local analysis of K_{3,3} singularities."
+  },
+  {
+   "limitation": "All phenomena sit at exact resonances and are not robust to generic perturbation.",
+   "closingQuestion": "Is non-robustness a genuine feature rather than a gap?",
+   "triedOrSearched": "Stratification and transversality: generic weights admit no equal-sum partition, so B_a is smooth (Section 7.1).",
+   "estimatedCost": "none",
+   "cheap": true,
+   "decision": "CLOSED"
+  },
+  {
+   "limitation": "The literal arXiv v1 reading of the conjecture is not refuted.",
+   "closingQuestion": "Is that reading true?",
+   "triedOrSearched": "Yes: stratification of compact real algebraic sets (Bochnak-Coste-Roy).",
+   "estimatedCost": "none",
+   "cheap": true,
+   "decision": "CLOSED"
+  },
+  {
+   "limitation": "Coupled-cell priority checked only at the level of main definitions and theorems.",
+   "closingQuestion": "Does a coupled-cell, graph-covering or signed-lift theorem already give the full realisation with germ and stability transfer?",
+   "triedOrSearched": "SGP, GST, GS main results; neighbouring literatures named by the correctness review.",
+   "estimatedCost": "days of specialist reading",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Exhaustive priority search is beyond a bounded release check; the claim is stated conditionally."
+  },
+  {
+   "limitation": "Extension to the Kuramoto-Sakaguchi model and noise robustness not studied.",
+   "closingQuestion": "Does the realisation survive a phase lag?",
+   "triedOrSearched": "Not attempted; the sine identity sin(x+pi) = -sin x used in invariance holds with phase lag, but gradient structure is lost.",
+   "estimatedCost": "weeks",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "New research."
+  }
+ ],
+ "extensionScout": {
+  "by": "internal AI-assisted review roles (editor, devil's advocate, perspective), the second automated correctness review and the editorial decision",
+  "date": "2026-10-27",
+  "proposals": [
+   "Immersed-cover obstruction (done: Lemma 9)",
+   "Applications of the realisation theorem (done: Corollaries 13-15)",
+   "36-vertex weighted version (done: Remark 16)",
+   "Settle r = 8 (open)",
+   "Minimal vertex count (open)",
+   "Sakaguchi extension (open)"
+  ],
+  "actions": [
+   "Lemma 9 added and repaired in the final round",
+   "Corollaries 13-15 and Remark 16 added with proofs and certificates",
+   "Remaining proposals recorded as open in the paper"
+  ]
+ }
+}

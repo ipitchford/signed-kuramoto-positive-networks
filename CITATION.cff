@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "Please cite this versioned research candidate by its DOI."
+title: "Signed Kuramoto networks inside positive ones: an exact realisation theorem, stable non-manifold equilibria, and Sclosa's closed-manifold conjecture"
+type: software
+authors:
+  - name: Anonymous
+version: 1.0.0-candidate
+doi: 10.5281/zenodo.23690073
+date-released: 2026-10-27
+repository-code: "https://github.com/ipitchford/signed-kuramoto-positive-networks"
+url: "https://evidencepress.org/releases/signed-kuramoto-positive-networks/"
+license:
+  - CC0-1.0
+  - MIT
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23690073
+    description: "Version DOI (1.0.0-candidate)"
+  - type: doi
+    value: 10.5281/zenodo.23690072
+    description: "Concept DOI (all versions)"
+keywords:
+  - Kuramoto model
+  - signed networks
+  - synchronisation
+  - equilibrium set
+  - Lyapunov stability
+  - polygon spaces
+  - stratification
+abstract: "Networks of identical phase oscillators with attractive (positive) coupling are the simplest models of synchronisation. This package proves that every +/-1 signed Kuramoto network is reproduced exactly on an invariant torus of a positive unweighted network, with the complete set of nearby equilibria, the Morse index, the nullity and Lyapunov stability all preserved. Applications: a 324-vertex 23-regular positive graph whose equilibrium set near one stable point is R x C(S^1 x S^1), a cone over a torus; stable cones R x C(S^k x S^k) for every k >= 1; stable crossing tori on 120 vertices; and stable smooth continua of every dimension. The cone example settles Sclosa's Conjecture 1.3 in the following precise sense. Refuted: the published wording (a finite union of closed manifolds), its countable version, the version with immersed compact pieces, and pieces closed only relative to the equilibrium set or the stable set. True: the literal arXiv v1 wording (a finite union of manifolds, not necessarily closed), by stratification of real algebraic sets, and the version allowing manifolds with boundary. On K_n a closed (or immersed compact) cover exists exactly when n is odd or n <= 4. All phenomena occur at exact symmetric resonances and are not robust to generic perturbation. Unrefereed AI-assisted candidate. Assurance: written proofs; exact integer eigenbasis certificates at explicit points; producer-side replay from a clean copy with byte-identical certificate and edge list; nine semantic negative controls; internal AI-assisted review in five roles, two automated correctness reviews, a targeted proof audit, a verification re-review and a fresh-context check of the final corrections. Not peer review, independent reproduction or formal verification. The local cone homeomorphism is a self-contained derivation, not claimed as new; the invariance step of the realisation is of a known coupled-cell type; novelty of the remaining contributions rests on a bounded search. Text CC0-1.0; code MIT."
+references:
+  - type: article
+    title: "Kuramoto Networks with Infinitely Many Stable Equilibria"
+    authors:
+      - family-names: Sclosa
+        given-names: Davide
+    journal: "SIAM Journal on Applied Dynamical Systems"
+    volume: 22
+    issue: 4
+    start: 3267
+    end: 3283
+    year: 2023
+    doi: 10.1137/23M155400X

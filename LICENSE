@@ -1,0 +1,13 @@
+This repository has two licences.
+
+1. Text, figures, check outputs and documentation: CC0 1.0 Universal (public
+   domain dedication). This covers the manuscript (.tex and .pdf), figures/,
+   checks/, README.md and the other release records. See LICENSE-TEXT and
+   PUBLIC_DOMAIN.md. Legal code:
+   https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+2. Original code (code/*.py, negative_controls.py, .github/workflows/): MIT
+   License. See LICENSE-CODE.
+
+Short verbatim quotations of Sclosa's Conjecture 1.3 remain the source author's
+text (see LICENSES.md).

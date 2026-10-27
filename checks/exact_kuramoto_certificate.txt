@@ -1,0 +1,9 @@
+Graph: 324 vertices, 3726 edges, degree 23, connected, simple.
+Displayed phase state: exactly zero force (integer sine certificate).
+Factor-basis exact determinants: [6, -288, 9]
+Complete integer eigenbasis verified for twice the Jacobian:
+{-40: 5, -39: 2, -30: 24, -28: 1, -27: 10, -22: 120, -18: 120, -13: 10, -12: 1, -10: 24, -1: 2, 0: 5}
+Inertia: 319 negative, 5 zero, 0 positive eigenvalues.
+r=8: largest eigenvalue of 2J is 0 with multiplicity 7 (5 tangent + 2 normal): degenerate.
+r=7: eigenvalue +1/2 of J with multiplicity 2: the cone point is unstable.
+The proof of Lyapunov stability is analytic, not inferred from this spectrum.
